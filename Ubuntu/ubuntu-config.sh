@@ -32,7 +32,7 @@ sudo docker --version
 # Maven and setup JAVA_HOME
 sudo apt -y install maven
 echo '# Set JAVA HOME environment variable' >> ~/.bashrc
-echo 'export JAVA_HOME=/opt/openjdk11' >> ~/.bashrc
+echo 'export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64' >> ~/.bashrc
 
 # Terraform
 sudo snap install terraform
