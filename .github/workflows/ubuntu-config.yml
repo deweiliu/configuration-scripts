@@ -1,0 +1,19 @@
+name: Ubuntu Configuration
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run configuration
+      run: |
+        cd ./Ubuntu
+        bash ubuntu-config.sh
+        
