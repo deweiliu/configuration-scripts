@@ -5,8 +5,8 @@ user=$(whoami)
 echo '# Set command prompt' >> ~/.bashrc
 echo 'export PS1="\nDate: \d Time: \t Command Number: \#\n\h: \W \u$ "' >> ~/.bashrc
 
-# update apt get
-sudo apt-get update
+# update apt
+sudo apt update
 
 # Setup Snap path
 # so applications installed with Snap can be run from Terminal
@@ -25,7 +25,7 @@ git config --global user.email 'deweiliu@hotmail.com'
 git config --global user.name 'Dewei Liu'
 
 # Docker
-sudo apt-get -y remove docker docker-engine docker.io
+sudo apt -y remove docker docker-engine docker.io
 sudo apt -y install docker.io
 sudo docker --version
 
