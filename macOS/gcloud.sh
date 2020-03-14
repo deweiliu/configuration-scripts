@@ -9,7 +9,3 @@ rm -f google-cloud-sdk-284.0.0-darwin-x86_64.tar.gz
 
 ./google-cloud-sdk/install.sh --usage-reporting false --path-update true --command-completion true --bash-completion true --quiet
 
-gcloud --version
-
-gcloud components update --quiet
-
