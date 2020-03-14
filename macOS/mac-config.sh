@@ -1,0 +1,1 @@
+bash gcloud.sh

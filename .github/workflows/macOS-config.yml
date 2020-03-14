@@ -1,0 +1,16 @@
+name: macOS Configuration
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run configuration
+      run: |
+        cd ./macOS
+        bash mac-config.sh
+        
