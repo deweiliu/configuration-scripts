@@ -13,4 +13,8 @@ jobs:
       run: |
         cd ./macOS
         bash mac-config.sh
+    - name: Run configuration
+      run: |
+        cd ./macOS
+        bash gcloud-update.sh        
         
